@@ -45,7 +45,27 @@ class Order: Codable {
     var zip = ""
     
     var hasValidAddress: Bool {
-        if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty {
+        // Original
+        //        if name.isEmpty || streetAddress.isEmpty || city.isEmpty || zip.isEmpty {
+        //            return false
+        //        }
+        
+        // Challenge 1
+        let trimmedName = name.trimmingCharacters(in: .whitespacesAndNewlines)
+        if name.isEmpty || name.count < 4 || name.count > 15 || trimmedName.isEmpty {
+            return false
+        }
+        
+        let trimmedAddress = streetAddress.trimmingCharacters(in: .whitespacesAndNewlines)
+        if streetAddress.isEmpty || streetAddress.count < 4 || streetAddress.count > 30 || trimmedAddress.isEmpty {
+            return false
+        }
+        
+        if city.isEmpty || city.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            return false
+        }
+        
+        if zip.isEmpty || zip.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
             return false
         }
 
