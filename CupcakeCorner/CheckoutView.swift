@@ -10,6 +10,8 @@ import SwiftUI
 struct CheckoutView: View {
     @State private var confirmationMessage = ""
     @State private var showingConfirmation = false
+    @State private var showingAlert = false
+    
     var order: Order
     
     func placeOrder() async {
@@ -25,7 +27,7 @@ struct CheckoutView: View {
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         // We are sending a POST request since we are writing new data
         // The content type is specified for the way the server will treat our data - this is called a MIME type
-        request.httpMethod = "POST"
+        // request.httpMethod = "POST"
         
         do {
             let (data, _) = try await URLSession.shared.upload(for: request, from: encoded)
@@ -35,6 +37,7 @@ struct CheckoutView: View {
             showingConfirmation = true
         } catch {
             print("Checkout failed: \(error.localizedDescription)")
+            showingAlert = true
         }
     }
 
@@ -65,6 +68,11 @@ struct CheckoutView: View {
         .navigationTitle("Check out")
         .navigationBarTitleDisplayMode(.inline)
         .scrollBounceBehavior(.basedOnSize)
+        .alert("Error!", isPresented: $showingAlert) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text("Unable to connect to servers.")
+        }
         .alert("Thank you!", isPresented: $showingConfirmation) {
             Button("OK") { }
         } message: {
