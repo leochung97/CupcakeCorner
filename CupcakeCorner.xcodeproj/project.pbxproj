@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		992073672B4C6CF100AFF2DF /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992073662B4C6CF100AFF2DF /* iTunesAPI.swift */; };
 		992073692B4C73C500AFF2DF /* ImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992073682B4C73C500AFF2DF /* ImageTest.swift */; };
+		9920736B2B4C778D00AFF2DF /* FormNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9920736A2B4C778D00AFF2DF /* FormNotes.swift */; };
 		99E663212B4C5E0E009C540D /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E663202B4C5E0E009C540D /* CupcakeCornerApp.swift */; };
 		99E663232B4C5E0E009C540D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E663222B4C5E0E009C540D /* ContentView.swift */; };
 		99E663252B4C5E0F009C540D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E663242B4C5E0F009C540D /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		992073662B4C6CF100AFF2DF /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
 		992073682B4C73C500AFF2DF /* ImageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTest.swift; sourceTree = "<group>"; };
+		9920736A2B4C778D00AFF2DF /* FormNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormNotes.swift; sourceTree = "<group>"; };
 		99E6631D2B4C5E0E009C540D /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E663202B4C5E0E009C540D /* CupcakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerApp.swift; sourceTree = "<group>"; };
 		99E663222B4C5E0E009C540D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				99E663202B4C5E0E009C540D /* CupcakeCornerApp.swift */,
 				99E663222B4C5E0E009C540D /* ContentView.swift */,
+				9920736A2B4C778D00AFF2DF /* FormNotes.swift */,
 				992073662B4C6CF100AFF2DF /* iTunesAPI.swift */,
 				992073682B4C73C500AFF2DF /* ImageTest.swift */,
 				99E663242B4C5E0F009C540D /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			files = (
 				992073692B4C73C500AFF2DF /* ImageTest.swift in Sources */,
 				99E663232B4C5E0E009C540D /* ContentView.swift in Sources */,
+				9920736B2B4C778D00AFF2DF /* FormNotes.swift in Sources */,
 				992073672B4C6CF100AFF2DF /* iTunesAPI.swift in Sources */,
 				99E663212B4C5E0E009C540D /* CupcakeCornerApp.swift in Sources */,
 			);
