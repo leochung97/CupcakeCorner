@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		992073672B4C6CF100AFF2DF /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992073662B4C6CF100AFF2DF /* iTunesAPI.swift */; };
 		99E663212B4C5E0E009C540D /* CupcakeCornerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E663202B4C5E0E009C540D /* CupcakeCornerApp.swift */; };
 		99E663232B4C5E0E009C540D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E663222B4C5E0E009C540D /* ContentView.swift */; };
 		99E663252B4C5E0F009C540D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E663242B4C5E0F009C540D /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		992073662B4C6CF100AFF2DF /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
 		99E6631D2B4C5E0E009C540D /* CupcakeCorner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupcakeCorner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E663202B4C5E0E009C540D /* CupcakeCornerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeCornerApp.swift; sourceTree = "<group>"; };
 		99E663222B4C5E0E009C540D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				99E663202B4C5E0E009C540D /* CupcakeCornerApp.swift */,
 				99E663222B4C5E0E009C540D /* ContentView.swift */,
+				992073662B4C6CF100AFF2DF /* iTunesAPI.swift */,
 				99E663242B4C5E0F009C540D /* Assets.xcassets */,
 				99E663262B4C5E0F009C540D /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99E663232B4C5E0E009C540D /* ContentView.swift in Sources */,
+				992073672B4C6CF100AFF2DF /* iTunesAPI.swift in Sources */,
 				99E663212B4C5E0E009C540D /* CupcakeCornerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
